@@ -5,7 +5,7 @@ body {
   justify-content: flex-start;
   height: 100vh;
   margin: 0;
-  background-color: #39ee6c;
+  background-color: #376bb9;
 }
 
 canvas {
@@ -16,4 +16,20 @@ canvas {
   font-size: 20px;
   color: black;
   margin-top: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.controls button {
+  font-size: 24px;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
 }
