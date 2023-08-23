@@ -16,7 +16,7 @@ let mileiVisible = false;
 
 let lastTime = 0;
 let deltaTime = 0;
-const frameRate = 7; // Menor valor = velocidad más lenta
+const frameRate = 10; // Menor valor = velocidad más lenta
 
 function drawSnake() {
   ctx.fillStyle = "#00FF00";
