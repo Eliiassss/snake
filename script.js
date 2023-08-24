@@ -12,7 +12,7 @@ let score = 0;
 
 let playerName = prompt("Ingresa tu nombre:");
 
-const mileiWord = "M I L E I";
+const mileiWord = "G O Y A .";
 let mileiIndex = 0;
 let mileiVisible = false;
 
