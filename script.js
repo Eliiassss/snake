@@ -39,7 +39,7 @@ function drawMilei() {
 }
 
 function changeBackground() {
-  document.body.style.backgroundImage = 'url("https://fotos.perfil.com/2023/08/17/trim/987/555/BC-milei-acabaria-con-la-intervencion-agricola-y-petrolera-en-argentina-7w.jpg")';
+  document.body.style.backgroundImage = 'url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.france24.com%2Fes%2Fam%25C3%25A9rica-latina%2F20230815-a-qu%25C3%25A9-obedece-el-triunfo-de-javier-milei-en-las-primarias-de-argentina&psig=AOvVaw3PL6uljJ9Pwiq9O069T72A&ust=1692922176881000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPD239qA9IADFQAAAAAdAAAAABAQ")';
   document.body.style.backgroundSize = 'cover';
   document.body.style.backgroundRepeat = 'no-repeat';
 }
