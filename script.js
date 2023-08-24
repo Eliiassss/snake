@@ -18,7 +18,7 @@ let mileiVisible = false;
 
 let lastTime = 0;
 let deltaTime = 0;
-const frameRate = 15; 
+const frameRate = 15;
 
 function drawSnake() {
   ctx.fillStyle = "#00FF00";
@@ -38,8 +38,8 @@ function drawMilei() {
   }
 }
 
-function changeBackground() {
-  document.body.style.backgroundImage = 'url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.france24.com%2Fes%2Fam%25C3%25A9rica-latina%2F20230815-a-qu%25C3%25A9-obedece-el-triunfo-de-javier-milei-en-las-primarias-de-argentina&psig=AOvVaw3PL6uljJ9Pwiq9O069T72A&ust=1692922176881000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPD239qA9IADFQAAAAAdAAAAABAQ")';
+function changeBackgroundWithImage(imageUrl) {
+  document.body.style.backgroundImage = `url("${imageUrl}")`;
   document.body.style.backgroundSize = 'cover';
   document.body.style.backgroundRepeat = 'no-repeat';
 }
@@ -56,9 +56,15 @@ function update(currentTime) {
       score += 10;
       mileiVisible = true;
       mileiIndex++;
+
       if (mileiIndex >= mileiWord.length) {
-        changeBackground();
+        if (score >= 80) {
+          changeBackgroundWithImage("https://i.ibb.co/vPBb4Dp/Whats-App-Image-2023-08-23-at-21-16-49.jpg");
+        } else {
+          changeBackground();
+        }
       }
+
       spawnApple();
     } else {
       snake.pop();
