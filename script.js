@@ -18,7 +18,7 @@ let mileiVisible = false;
 
 let lastTime = 0;
 let deltaTime = 0;
-const frameRate = 20; 
+const frameRate = 15; 
 
 function drawSnake() {
   ctx.fillStyle = "#00FF00";
