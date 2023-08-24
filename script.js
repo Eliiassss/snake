@@ -10,13 +10,15 @@ let dx = 0;
 let dy = 0;
 let score = 0;
 
+let playerName = prompt("Ingresa tu nombre:");
+
 const mileiWord = "M I L E I";
 let mileiIndex = 0;
 let mileiVisible = false;
 
 let lastTime = 0;
 let deltaTime = 0;
-const frameRate = 20; // Menor valor = velocidad más lenta
+const frameRate = 20; 
 
 function drawSnake() {
   ctx.fillStyle = "#00FF00";
@@ -82,7 +84,7 @@ function spawnApple() {
 }
 
 function gameOver() {
-  alert("Game Over! Score: " + score);
+  alert(`Zurdo de mierda ${playerName}, perdiste boludito. Puntaje: ${score}`);
   snake = [{ x: 10, y: 10 }];
   apple = { x: 15, y: 15 };
   score = 0;
