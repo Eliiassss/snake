@@ -12,7 +12,7 @@ let score = 0;
 
 let playerName = prompt("Ingresa tu nombre:");
 
-const mileiWord = "G O Y A .";
+const mileiWord = "I N G. A"; 
 let mileiIndex = 0;
 let mileiVisible = false;
 
@@ -59,7 +59,7 @@ function update(currentTime) {
 
       if (mileiIndex >= mileiWord.length) {
         if (score >= 80) {
-          changeBackgroundWithImage("https://i.ibb.co/vPBb4Dp/Whats-App-Image-2023-08-23-at-21-16-49.jpg");
+          changeBackgroundWithImage("https://i.ibb.co/b22KNjc/Whats-App-Image-2023-08-30-at-12-13-09.jpg");
         } else {
           changeBackground();
         }
