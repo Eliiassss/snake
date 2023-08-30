@@ -59,7 +59,7 @@ function update(currentTime) {
 
       if (mileiIndex >= mileiWord.length) {
         if (score >= 80) {
-          changeBackgroundWithImage("https://i.ibb.co/b22KNjc/Whats-App-Image-2023-08-30-at-12-13-09.jpg");
+          changeBackgroundWithImage("https://i.ibb.co/hHw81kG/ssss.jpg");
         } else {
           changeBackground();
         }
