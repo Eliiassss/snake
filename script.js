@@ -90,7 +90,7 @@ function spawnApple() {
 }
 
 function gameOver() {
-  alert(`Ya perdiste ${playerName}, Asi no vas a ser un ingeniero como yo pete. Puntaje: ${score}`);
+  alert(`Que pue ${playerName}, ya perdiste banana,asi no vas a ser un ingeniero como yo pete. Puntaje: ${score}`);
   snake = [{ x: 10, y: 10 }];
   apple = { x: 15, y: 15 };
   score = 0;
