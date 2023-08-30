@@ -40,7 +40,7 @@ function drawMilei() {
 
 function changeBackgroundWithImage(imageUrl) {
   document.body.style.backgroundImage = `url("${imageUrl}")`;
-  document.body.style.backgroundSize = 'cover';
+  document.body.style.backgroundSize = '100% 100%'; // Set background size to cover the entire body
   document.body.style.backgroundRepeat = 'no-repeat';
 }
 
@@ -90,7 +90,7 @@ function spawnApple() {
 }
 
 function gameOver() {
-  alert(`Zurdo de mierda ${playerName}, perdiste boludito. Puntaje: ${score}`);
+  alert(`Ya perdiste ${playerName}, Asi no vas a ser un ingeniero como yo pete. Puntaje: ${score}`);
   snake = [{ x: 10, y: 10 }];
   apple = { x: 15, y: 15 };
   score = 0;
