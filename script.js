@@ -12,6 +12,20 @@ let score = 0;
 
 let playerName = prompt("Ingresa tu nombre:");
 
+// Establece el nombre del jugador en el marcador
+document.getElementById("playerName").textContent = playerName;
+
+// Antes de iniciar el juego, obtén la puntuación máxima almacenada en el almacenamiento local
+let maxScore = localStorage.getItem("maxScore");
+if (maxScore === null) {
+  maxScore = 0;
+} else {
+  maxScore = parseInt(maxScore);
+}
+
+// Actualiza el marcador de puntuación máxima
+document.getElementById("maxScore").textContent = maxScore;
+
 const mileiWord = "I N G. A"; 
 let mileiIndex = 0;
 let mileiVisible = false;
@@ -90,6 +104,12 @@ function spawnApple() {
 }
 
 function gameOver() {
+  if (score > maxScore) {
+    maxScore = score;
+    localStorage.setItem("maxScore", maxScore);
+    document.getElementById("maxScore").textContent = maxScore;
+  }
+
   alert(`Que pue ${playerName}, perdiste? el inge ayala esta desepcionado de vos, toma tu puntaje pue: ${score}`);
   snake = [{ x: 10, y: 10 }];
   apple = { x: 15, y: 15 };
